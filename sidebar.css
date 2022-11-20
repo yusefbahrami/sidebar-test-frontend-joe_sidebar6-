@@ -23,6 +23,7 @@ body {
   border-right: 1px solid #dbdbdb;
   transition: 0.3s;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .sidebar-header {
@@ -81,8 +82,28 @@ body {
 .sidebar button > span > span {
   transition: 0.3s;
 }
-
-@media (max-width: 580px) {
+/* minimal sidebar */
+.minimal-sidebar .logo-img {
+  display: none;
+}
+.minimal-sidebar .logo-icon {
+  display: block;
+}
+.sidebar.minimal-sidebar {
+  width: 72px;
+}
+.minimal-sidebar .sidebar-header .uil-bars {
+  align-self: center;
+}
+.sidebar.minimal-sidebar button > span {
+  width: 50px;
+}
+.sidebar.minimal-sidebar button > span > span {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+/* @media screen and (max-width: 580px) {
   .logo-img {
     display: none;
   }
@@ -106,7 +127,7 @@ body {
     opacity: 0;
     visibility: hidden;
   }
-}
+} */
 
 .sidebar button i {
   position: relative;
