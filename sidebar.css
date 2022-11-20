@@ -74,7 +74,7 @@ body {
   transition: 0.3s;
 }
 
-@media (width <= 824px) {
+@media (max-width: 580px) {
   .logo-img {
     display: none;
   }
