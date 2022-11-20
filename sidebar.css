@@ -28,8 +28,15 @@ body {
 .sidebar-header {
   width: 100%;
   margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 20px;
 }
-
+.sidebar-header .uil-bars {
+  font-size: 28px;
+  padding: 0 12px;
+}
 .logo-icon {
   display: none;
   font-size: 28px;
@@ -86,6 +93,9 @@ body {
 
   .sidebar {
     width: 72px;
+  }
+  .sidebar-header .uil-bars {
+    align-self: center;
   }
 
   .sidebar button > span {
